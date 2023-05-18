@@ -2,10 +2,10 @@ package es.mdef.ViscontrolLib;
 
 import java.util.List;
 
-public class Invitado  extends Persona {
+public class Invitado  extends Persona implements InvitadoInterfaz {
 	
 	private String matricula;
-	private String empresa;
+	private Empresa empresa;
 	private Autorizacion autorizacion;
 	private List<Visita> visitas;
 	
@@ -22,10 +22,10 @@ public class Invitado  extends Persona {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-	public String getEmpresa() {
+	public Empresa getEmpresa() {
 		return empresa;
 	}
-	public void setEmpresa(String empresa) {
+	public void setEmpresa(Empresa empresa) {
 		this.empresa = empresa;
 	}
 	
@@ -37,7 +37,7 @@ public class Invitado  extends Persona {
 	}
 	
 	public Invitado(String dni, String nombre, String apellidos, String telefono, String email, String matricula,
-			String empresa) {
+			Empresa empresa) {
 		super(dni, nombre, apellidos, telefono, email);
 		this.matricula = matricula;
 		this.empresa = empresa;
