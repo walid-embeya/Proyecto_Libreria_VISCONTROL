@@ -2,7 +2,7 @@ package es.mdef.ViscontrolLib;
 
 import java.util.List;
 
-public class Invitado  extends Persona implements InvitadoInterfaz {
+public class Invitado extends Persona implements InvitadoInterfaz {
 	
 	private String matricula;
 	private Empresa empresa;
@@ -34,13 +34,6 @@ public class Invitado  extends Persona implements InvitadoInterfaz {
 	}
 	public void setAutorizacion(Autorizacion autorizacion) {
 		this.autorizacion = autorizacion;
-	}
-	
-	public Invitado(String dni, String nombre, String apellidos, String telefono, String email, String matricula,
-			Empresa empresa) {
-		super(dni, nombre, apellidos, telefono, email);
-		this.matricula = matricula;
-		this.empresa = empresa;
 	}
 	
 	@Override

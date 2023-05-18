@@ -62,26 +62,10 @@ public class Visita {
 		this.invitados = invitados;
 	}
 	
-	public Visita(String id, Date fechaInicio, Date fechaFin, String actuaciones, Actividad actividad,
-			Anfitrion anfitrion, List<Invitado> invitados) {
-		this.id = id;
-		this.fechaInicio = fechaInicio;
-		this.fechaFin = fechaFin;
-		this.actuaciones = actuaciones;
-		this.actividad = actividad;
-		this.anfitrion = anfitrion;
-		this.invitados = invitados;
-	}
-	
 	@Override
 	public String toString() {
 		return "Visita [fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + ", actuaciones=" + actuaciones
 				+ ", actividad=" + actividad + ", anfitrion=" + anfitrion + "]";
 	}
-    
-    
-    
-	
-    
     
 }

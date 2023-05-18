@@ -26,12 +26,6 @@ public class Autorizacion {
 		this.fechaFin = fechaFin;
 	}
 	
-	public Autorizacion(String tipo, Date fechaInicio, Date fechaFin) {
-		this.tipo = tipo;
-		this.fechaInicio = fechaInicio;
-		this.fechaFin = fechaFin;
-	}
-	
 	@Override
 	public String toString() {
 		return "Autorizacion [tipo=" + tipo + ", fechaInicio=" + fechaInicio + ", fechaFin=" + fechaFin + "]";

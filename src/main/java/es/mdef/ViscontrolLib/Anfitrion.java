@@ -26,14 +26,6 @@ public class Anfitrion extends Persona implements AnfitrionInterfaz {
 			this.role = role;
 		}		
 		
-		public Anfitrion(String dni, String nombre, String apellidos, String telefono, String email, Integer nip,
-				String area, Integer role) {
-			super(dni, nombre, apellidos, telefono, email);
-			this.nip = nip;
-			this.area = area;
-			this.role = role;
-		}
-		
 		@Override
 		public String toString() {
 			return "Anfitrion [nip=" + nip + ", area=" + area + ", role=" + role + "]";
