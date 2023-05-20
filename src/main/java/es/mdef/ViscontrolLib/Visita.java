@@ -5,20 +5,12 @@ import java.util.List;
 
 public class Visita {
 	
-	private String id;
     private Date fechaInicio;
     private Date fechaFin;
     private String actuaciones;
-    private Actividad actividad;
-    private Anfitrion anfitrion; 
+    private String actividad;
+    private AnfitrionImpl anfitrion; 
     private List<Invitado> invitados;
-    
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	
 	public Date getFechaInicio() {
 		return fechaInicio;
@@ -41,17 +33,17 @@ public class Visita {
 		this.actuaciones = actuaciones;
 	}
 	
-	public Actividad getActividad() {
+	public String getActividad() {
 		return actividad;
 	}
-	public void setActividad(Actividad actividad) {
+	public void setActividad(String actividad) {
 		this.actividad = actividad;
 	}
 	
-	public Anfitrion getAnfitrion() {
+	public AnfitrionImpl getAnfitrion() {
 		return anfitrion;
 	}
-	public void setAnfitrion(Anfitrion anfitrion) {
+	public void setAnfitrion(AnfitrionImpl anfitrion) {
 		this.anfitrion = anfitrion;
 	}
 	
