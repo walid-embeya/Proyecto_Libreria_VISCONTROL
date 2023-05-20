@@ -4,6 +4,6 @@ public interface Anfitrion {
 	
 	public String getNip();
 	public String getArea();
-	public String getRol();
+	public String getRole();
 
 }

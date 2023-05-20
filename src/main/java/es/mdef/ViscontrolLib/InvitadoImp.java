@@ -7,7 +7,7 @@ public class InvitadoImp extends PersonaImp implements Invitado {
 	
 	private String matricula;
 	private String empresa;
-	private boolean autorizacion;
+	private boolean autorizado;
 	private Date inicioAut;
 	private Date finAut;
 	private List<Visita> visitas;
@@ -28,10 +28,10 @@ public class InvitadoImp extends PersonaImp implements Invitado {
 	}
 
 	public boolean isAutorizado() {
-		return autorizacion;
+		return autorizado;
 	}
-	public void setAutorizacion(boolean autorizacion) {
-		this.autorizacion = autorizacion;
+	public void setAutorizado(boolean autorizado) {
+		this.autorizado = autorizado;
 	}
 
 	public Date getInicioAut() {

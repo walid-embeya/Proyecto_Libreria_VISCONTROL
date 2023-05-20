@@ -18,13 +18,14 @@ public class AnfitrionImp extends PersonaImp implements Anfitrion {
 		public void setArea(String area) {
 			this.area = area;
 		}
-
-		public String getRol() {
+		
+		public String getRole() {
 			return role;
 		}
-		public void setRol(String role) {
+		public void setRole(String role) {
 			this.role = role;
-		}		
+		}
+		
 		
 		@Override
 		public String toString() {
