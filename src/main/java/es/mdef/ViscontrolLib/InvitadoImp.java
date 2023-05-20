@@ -1,21 +1,25 @@
 package es.mdef.ViscontrolLib;
 
+import java.util.Date;
 import java.util.List;
 
-public class InvitadoImpl extends PersonaImpl implements Invitado {
+public class InvitadoImp extends PersonaImp implements Invitado {
 	
 	private String matricula;
 	private String empresa;
-	private String autorizacion;
+	private boolean autorizacion;
+	private Date inicioAut;
+	private Date finAut;
 	private List<Visita> visitas;
 		
+
 	public String getMatricula() {
 		return matricula;
 	}
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-	
+
 	public String getEmpresa() {
 		return empresa;
 	}
@@ -23,13 +27,27 @@ public class InvitadoImpl extends PersonaImpl implements Invitado {
 		this.empresa = empresa;
 	}
 
-	public String getAutorizacion() {
+	public boolean isAutorizado() {
 		return autorizacion;
 	}
-	public void setAutorizacion(String autorizacion) {
+	public void setAutorizacion(boolean autorizacion) {
 		this.autorizacion = autorizacion;
 	}
 
+	public Date getInicioAut() {
+		return inicioAut;
+	}
+	public void setInicioAut(Date inicioAut) {
+		this.inicioAut = inicioAut;
+	}
+
+	public Date getFinAut() {
+		return finAut;
+	}
+	public void setFinAut(Date finAut) {
+		this.finAut = finAut;
+	}
+	
 	public List<Visita> getVisitas() {
 		return visitas;
 	}

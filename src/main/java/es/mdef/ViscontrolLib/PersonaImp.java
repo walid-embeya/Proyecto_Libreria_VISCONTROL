@@ -1,6 +1,6 @@
 package es.mdef.ViscontrolLib;
 
-public class PersonaImpl implements Persona {
+public class PersonaImp implements Persona {
 		
 	private String dni;
 	private String nombre;

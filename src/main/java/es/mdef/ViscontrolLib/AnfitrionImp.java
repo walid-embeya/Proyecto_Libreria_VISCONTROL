@@ -1,6 +1,6 @@
 package es.mdef.ViscontrolLib;
 
-public class AnfitrionImpl extends PersonaImpl implements Anfitrion {		
+public class AnfitrionImp extends PersonaImp implements Anfitrion {		
 		private String nip;
 		private String area;
 		private String role;
