@@ -12,7 +12,14 @@ public class InvitadoImp extends PersonaImp implements Invitado {
 	private Date finAut;
 	private List<Visita> visitas;
 		
-
+	
+	public List<Visita> getVisitas() {
+		return visitas;
+	}
+	public void setVisitas(List<Visita> visitas) {
+		this.visitas = visitas;
+	}
+	
 	public String getMatricula() {
 		return matricula;
 	}
@@ -48,12 +55,6 @@ public class InvitadoImp extends PersonaImp implements Invitado {
 		this.finAut = finAut;
 	}
 	
-	public List<Visita> getVisitas() {
-		return visitas;
-	}
-	public void setVisitas(List<Visita> visitas) {
-		this.visitas = visitas;
-	}
 
 	@Override
 	public String toString() {

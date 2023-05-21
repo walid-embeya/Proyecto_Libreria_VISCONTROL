@@ -1,9 +1,21 @@
 package es.mdef.ViscontrolLib;
 
+import java.util.List;
+
 public class AnfitrionImp extends PersonaImp implements Anfitrion {		
+	
 		private String nip;
 		private String area;
 		private String role;
+		private List<Visita> visitas;
+		
+		
+		public List<Visita> getVisitas() {
+			return visitas;
+		}
+		public void setVisitas(List<Visita> visitas) {
+			this.visitas = visitas;
+		}
 		
 		public String getNip() {
 			return nip;
