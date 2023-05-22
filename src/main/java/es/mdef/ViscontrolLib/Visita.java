@@ -10,6 +10,6 @@ public interface Visita {
 	public String getActuaciones();
 	public String getActividad();
 	public Anfitrion getAnfitrion();
-	public List<Invitado> getInvitados();
+	public List<Persona> getInvitados();
 	
 }

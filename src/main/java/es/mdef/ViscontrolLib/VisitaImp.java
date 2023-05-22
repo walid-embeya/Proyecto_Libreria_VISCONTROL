@@ -10,7 +10,7 @@ public class VisitaImp implements Visita {
     private String actuaciones;
     private String actividad;
     private Anfitrion anfitrion; 
-    private List<Invitado> invitados;
+    private List<Persona> invitados;
 	
 	public Date getFechaInicio() {
 		return fechaInicio;
@@ -47,10 +47,10 @@ public class VisitaImp implements Visita {
 		this.anfitrion = anfitrion;
 	}
 	
-	public List<Invitado> getInvitados() {
+	public List<Persona> getInvitados() {
 		return invitados;
 	}
-	public void setInvitados(List<Invitado> invitados) {
+	public void setInvitados(List<Persona> invitados) {
 		this.invitados = invitados;
 	}
 	
